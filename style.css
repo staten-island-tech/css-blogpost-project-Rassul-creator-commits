@@ -1,15 +1,66 @@
 body {
-  /* sets the background for all used space (if a full screen isn't used then it will fill to fit a full screen) */
-  background-image: url(media/beach.jpg);
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: #FAFAFA;
+  color: #212121;
 }
 
-h1 {
-  /* sets background color around the h1 text */
-  background-color: red;
+#header {
+  background: #3F51B5;
+  color: white;
+  padding: 20px;
   text-align: center;
-
 }
-h2 {
-  background-color: red;
+
+.blog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.post {
+  background: white;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
   text-align: center;
+}
+
+.post img {
+  width: 100%;
+  height: auto;
+}
+
+.post-content {
+  padding: 20px;
+}
+
+.post-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #3F51B5;
+}
+
+.post-text {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  display: inline-block;
+  background: #FF5722;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.read-more:hover {
+  background: #E64A19;
 }
